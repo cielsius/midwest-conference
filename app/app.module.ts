@@ -11,6 +11,7 @@ import { LockScreenPage } from '../pages/lock-screen/lock-screen';
 import { MapPage } from '../pages/map/map';
 import { NavigationPage } from '../pages/navigation/navigation';
 import { SchedulePage } from '../pages/schedule/schedule';
+import { SponsorsPage } from '../pages/sponsors/sponsors';
 import { TabsPage } from '../pages/tabs/tabs';
 
 @NgModule({
@@ -24,6 +25,7 @@ import { TabsPage } from '../pages/tabs/tabs';
     MapPage,
     NavigationPage,
     SchedulePage,
+    SponsorsPage,
     TabsPage
   ],
   imports: [
@@ -41,6 +43,7 @@ import { TabsPage } from '../pages/tabs/tabs';
     MapPage,
     NavigationPage,
     SchedulePage,
+    SponsorsPage,
     TabsPage
   ],
   providers: [
