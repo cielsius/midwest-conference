@@ -7,21 +7,25 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'sponsors.html',
   styleUrls: ['sponsors.html']
 })
+
 export class SponsorsPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   sponsor = [
-    { name: 'Event 1' },
-    { name: 'Event 2' },
-    { name: 'Event 3' },
-    { name: 'Event 4' },
-    { name: 'Event 5' }
+    { id: 1,
+      sponsor_name: 'Sponsor 1',
+      contact_name: 'Contact 1',
+      sponsor_url: 'url 1',
+      contact_email: 'email 1',
+      sponsor_level: 'level 1',
+      sponsor_description: 'description 1',
+      industry: 'industry 1' }
   ];
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad SchedulePage');
+    console.log('ionViewDidLoad SponsorPage');
   }
 
 }
