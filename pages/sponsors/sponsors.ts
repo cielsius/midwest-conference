@@ -13,7 +13,7 @@ export class SponsorsPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  sponsor = [
+  sponsors = [
     { id: 1,
       sponsor_name: 'Sponsor 1',
       contact_name: 'Contact 1',
@@ -25,7 +25,7 @@ export class SponsorsPage {
   ];
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad SponsorPage');
+    console.log('ionViewDidLoad SponsorsPage');
   }
 
 }
