@@ -6,6 +6,7 @@ import { ContactPage} from '../contact/contact';
 import { FAQPage } from '../FAQ/FAQ';
 import { MapPage } from '../map/map';
 import { SchedulePage } from '../schedule/schedule';
+import { SponsorsPage } from '../sponsors/sponsors';
 
 @IonicPage()
 @Component({
@@ -48,6 +49,10 @@ export class NavigationPage {
 
   navSchedulePage(){
     this.navCtrl.push(SchedulePage);
+  }
+
+  navSponsorsPage(){
+    this.navCtrl.push(SponsorsPage);
   }
 
   events = [
