@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Frequently Asked Questions</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <h2>Frequently Asked Questons </h2>
+
+  <ion-list>
+    <ion-item text-wrap *ngFor="let faq of faqs">
+      <span style="font-size:1.5em;"><b>{{faq.question}}:</b> </span><br>
+      <p style="font-size:1em;">{{faq.answer}}</p><br>
+    </ion-item>
+  </ion-list>
+    <ion-label style="font-size:1.75em;"><b>Question not found? Ask here!</b></ion-label>
+      <ion-list style="border: 1px solid grey;">
+            <ion-input required type="text" (keyup.enter)="handleAskedQuestion()" [(ngModel)]="newQuestion"></ion-input>
+      </ion-list>
+</ion-content>

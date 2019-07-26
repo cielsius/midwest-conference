@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Lock Screen</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div text-center>
+          <H1>NAESC Conference App</H1>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row title>
+      <ion-col>
+        <div text-center>
+          <H2> Conference Passcode </H2>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col></ion-col>
+      <ion-col col-8>
+        <ion-item>
+          <ion-label>Conference</ion-label>
+          <ion-select>
+            <ion-option value="cat">Central</ion-option>
+            <ion-option value="midwest">Midwest</ion-option>
+            <ion-option value="north-atlantic">North Atlantic</ion-option>
+            <ion-option value="southeast">Southeast</ion-option>
+            <ion-option value="west">West</ion-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+          <ion-label>Password</ion-label>
+          <ion-input type="password" [(ngModel)]="login_password" (keyup.enter)="checkPassword()"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col></ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

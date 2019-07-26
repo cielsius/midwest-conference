@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Navigation</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div style="font-size:24px;">
+    <ion-row margin-bottom margin-top padding-top (click)="navSchedulePage()" style="border-top: 1px solid grey;">
+      <ion-icon name="calendar" item-left color="primary"></ion-icon>
+      <span margin-left>Schedule</span>
+    </ion-row>
+    
+    <ion-row margin-bottom margin-top padding-top (click)="navMapPage()" style="border-top: 1px solid grey;">
+      <ion-icon name="map" item-left color="primary"></ion-icon>
+      <span margin-left>Map</span>
+    </ion-row>
+    
+    <ion-row margin-bottom margin-top padding-top style="border-top: 1px solid grey;">
+      <ion-icon name="subway" item-left color="primary"></ion-icon>
+      <span margin-left>Off-Campus Resources</span>
+      </ion-row>
+    
+    <ion-row margin-bottom margin-top padding-top padding-left style="padding-left: 15px; font-size: 20px;">
+        <ion-icon name="car" item-left color="primary"></ion-icon>
+        <span margin-left>Find a Ride</span>
+      </ion-row>
+      
+    <ion-row margin-bottom margin-top padding-top padding-left style="padding-left: 15px; font-size: 20px;">
+        <ion-icon name="restaurant" item-left color="primary"></ion-icon>
+        <span margin-left>Dining</span>
+      </ion-row>
+
+    <ion-row margin-bottom margin-top padding-top padding-left style="padding-left: 15px; font-size: 20px;">
+        <ion-icon name="walk" item-left color="primary"></ion-icon>
+        <span margin-left>Things to Do</span>
+      </ion-row>
+
+    <ion-row margin-bottom margin-top padding-top (click)="navFAQPage()" style="border-top: 1px solid grey;">
+      <ion-icon name="help-circle" item-left color="primary"></ion-icon>
+      <span margin-left>FAQ</span>
+    </ion-row>
+    
+    <ion-row margin-bottom margin-top padding-top (click)="navPage4()" style="border-top: 1px solid grey;">
+      <ion-icon name="ios-contact" item-left color="primary"></ion-icon>
+      <span margin-left>Resources</span>
+    </ion-row>
+    
+    <ion-row margin-bottom margin-top padding-top (click)="navContactPage()" style="border-top: 1px solid grey;">
+      <ion-icon name="ios-contact" item-left color="primary"></ion-icon>
+      <span margin-left>Contact Info</span>
+    </ion-row>
+    
+    <ion-row margin-bottom margin-top padding-top (click)="navAboutSchool()" style="border-top: 1px solid grey;">
+      <ion-icon name="school" item-left color="primary"></ion-icon>
+      <span margin-left>About The School</span>
+    </ion-row>
+    
+    <ion-row margin-bottom margin-top padding-top (click)="navPage2()" style="border-top: 1px solid grey;">
+      <ion-icon name="gift" item-left color="primary"></ion-icon>
+      <span margin-left>Sponsors</span>
+    </ion-row>
+  </div>
+</ion-content>
