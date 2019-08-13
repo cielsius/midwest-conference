@@ -18,13 +18,10 @@
       <ion-col col-10>
         <ion-item>
           <ion-label>Conference</ion-label>
-          <ion-select>
-            <ion-option value="cat">Central</ion-option>
-            <ion-option value="midwest">Midwest</ion-option>
-            <ion-option value="north-atlantic">North Atlantic</ion-option>
-            <ion-option value="southeast">Southeast</ion-option>
-            <ion-option value="west">West</ion-option>
-          </ion-select>
+          <ion-select [(ngModel)]="Conference" (ionChange)="optionsFn();">
+          <ion-option [value]="item" *ngFor="let item of options">{{item.name}}</ion-option> 
+        </ion-select>
+          
         </ion-item>
         <ion-item>
           <ion-label>Password</ion-label>

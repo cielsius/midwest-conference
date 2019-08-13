@@ -17,13 +17,30 @@ import { TabsPage } from '../tabs/tabs';
   public login_password:any;
 
   checkPassword() {
-    if (this.login_password == "midwestisbest") {
-    this.navCtrl.setRoot(TabsPage);
+    if (this.login_password == 'midwestisbest') {
+      this.navCtrl.setRoot(TabsPage);
     }
     else {
       alert('Password incorrect, please try again');
     }
   }
+
+  optionsFn():void {//here item is an object 
+    console.log(this.Conference);
+  }
+
+  options = [
+    {"name": 'Central',
+      "password": ' '},
+    {"name": 'Midwest',
+      "password": 'midwestisbest'},
+    {"name": 'North Atlantic',
+      "password": ' '},
+    {"name": 'Southeast',
+      "password": ' '},
+    {"name": 'West',
+      "password": ' '}
+  ]
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
