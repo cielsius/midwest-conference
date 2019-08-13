@@ -9,20 +9,13 @@
     <ion-row>
       <ion-col>
         <div text-center>
-          <H1>NAESC Conference App</H1>
-        </div>
-      </ion-col>
-    </ion-row>
-    <ion-row title>
-      <ion-col>
-        <div text-center>
-          <H2> Conference Passcode </H2>
+          <p style="font-size:2.25em;;"><b>NAESC Conference App</b></p>
         </div>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col></ion-col>
-      <ion-col col-8>
+      <ion-col col-10>
         <ion-item>
           <ion-label>Conference</ion-label>
           <ion-select>
@@ -37,6 +30,9 @@
           <ion-label>Password</ion-label>
           <ion-input type="password" [(ngModel)]="login_password" (keyup.enter)="checkPassword()"></ion-input>
         </ion-item>
+        <div style="text-align:center; padding-top:1em"><button ion-button style="width:75%">
+          Login
+        </button></div>
       </ion-col>
       <ion-col></ion-col>
     </ion-row>

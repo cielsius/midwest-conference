@@ -54,6 +54,10 @@ export class NavigationPage {
     this.navCtrl.push(MapPage);
   }
 
+  navResourcesPage(){
+    this.navCtrl.push(ResourcesPage);
+  }
+
   navSchedulePage(){
     this.navCtrl.push(SchedulePage);
   }

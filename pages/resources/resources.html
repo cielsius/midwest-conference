@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Resources</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <h2>Resources</h2>
+
+  <ion-list>
+    <ion-item text-wrap *ngFor="let resource of resources">
+      <span style="font-size:1.5em;"><b>{{resource.name}}</b> </span><br>
+      <p style="font-size:1em;">{{resource.description}}</p><br>
+    </ion-item>
+  </ion-list>
+</ion-content>
