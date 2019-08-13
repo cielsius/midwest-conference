@@ -6,6 +6,7 @@ import { ContactPage} from '../contact/contact';
 import { DiningPage } from '../dining/dining';
 import { FAQPage } from '../FAQ/FAQ';
 import { MapPage } from '../map/map';
+import { ResourcesPage } from '../resources/resources';
 import { SchedulePage } from '../schedule/schedule';
 import { SponsorsPage } from '../sponsors/sponsors';
 import { ThingsToDoPage } from '../things-to-do/things-to-do';
