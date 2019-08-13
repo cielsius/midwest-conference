@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Things to Do</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <h2>Things to Do</h2>
+
+  <ion-list>
+    <ion-item text-wrap *ngFor="let activity of activitys">
+      <span style="font-size:1.5em;"><b>{{activity.name}}</b> </span><br>
+      <p style="font-size:1em;">{{activity.description}}</p><br>
+    </ion-item>
+  </ion-list>
+</ion-content>

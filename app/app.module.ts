@@ -14,6 +14,7 @@ import { NavigationPage } from '../pages/navigation/navigation';
 import { SchedulePage } from '../pages/schedule/schedule';
 import { SponsorsPage } from '../pages/sponsors/sponsors';
 import { TabsPage } from '../pages/tabs/tabs';
+import { ThingsToDoPage } from '../pages/things-to-do/things-to-do';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { TabsPage } from '../pages/tabs/tabs';
     NavigationPage,
     SchedulePage,
     SponsorsPage,
-    TabsPage
+    TabsPage,
+    ThingsToDoPage
   ],
   imports: [
     BrowserModule,
@@ -47,7 +49,8 @@ import { TabsPage } from '../pages/tabs/tabs';
     NavigationPage,
     SchedulePage,
     SponsorsPage,
-    TabsPage
+    TabsPage,
+    ThingsToDoPage
   ],
   providers: [
     {provide: ErrorHandler, useClass: IonicErrorHandler}

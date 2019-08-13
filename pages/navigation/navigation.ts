@@ -8,6 +8,7 @@ import { FAQPage } from '../FAQ/FAQ';
 import { MapPage } from '../map/map';
 import { SchedulePage } from '../schedule/schedule';
 import { SponsorsPage } from '../sponsors/sponsors';
+import { ThingsToDoPage } from '../things-to-do/things-to-do';
 
 @IonicPage()
 @Component({
@@ -32,9 +33,6 @@ export class NavigationPage {
 
   }
 
-  navDiningPage(){
-    this.navCtrl.push(DiningPage);
-  }
 
   navAboutSchool(){
     this.navCtrl.push(AboutSchoolPage);
@@ -42,6 +40,10 @@ export class NavigationPage {
 
   navContactPage(){
     this.navCtrl.push(ContactPage);
+  }
+
+  navDiningPage(){
+    this.navCtrl.push(DiningPage);
   }
 
   navFAQPage(){
@@ -60,13 +62,9 @@ export class NavigationPage {
     this.navCtrl.push(SponsorsPage);
   }
 
-  events = [
-    { name: 'Event 1', isChecked: false },
-    { name: 'Event 2', isChecked: false },
-    { name: 'Event 3', isChecked: false },
-    { name: 'Event 4', isChecked: false },
-    { name: 'Event 5', isChecked: true}
-  ];
+  navThingsToDoPage(){
+    this.navCtrl.push(ThingsToDoPage);
+  }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad NavigationPage');
