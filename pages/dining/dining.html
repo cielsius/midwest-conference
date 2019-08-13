@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Dining</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <h2>Dining</h2>
+
+  <ion-list>
+    <ion-item text-wrap *ngFor="let restaurant of restaurants">
+      <span style="font-size:1.5em;"><b>{{restaurant.name}}</b> </span><br>
+      <p style="font-size:1em;">{{restaurant.description}}</p><br>
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -5,6 +5,7 @@ import { MyApp } from './app.component';
 
 import { AboutSchoolPage } from '../pages/about-school/about-school';
 import { ContactPage } from '../pages/contact/contact';
+import { DiningPage } from '../pages/dining/dining';
 import { FAQPage } from '../pages/FAQ/FAQ';
 import { HomePage } from '../pages/home/home';
 import { LockScreenPage } from '../pages/lock-screen/lock-screen';
@@ -19,6 +20,7 @@ import { TabsPage } from '../pages/tabs/tabs';
     MyApp,
     AboutSchoolPage,
     ContactPage,
+    DiningPage,
     FAQPage,
     HomePage,
     LockScreenPage,
@@ -37,6 +39,7 @@ import { TabsPage } from '../pages/tabs/tabs';
     MyApp,
     AboutSchoolPage,
     ContactPage,
+    DiningPage,
     FAQPage,
     HomePage,
     LockScreenPage,

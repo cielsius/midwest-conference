@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import { AboutSchoolPage } from '../about-school/about-school';
 import { ContactPage} from '../contact/contact';
+import { DiningPage } from '../dining/dining';
 import { FAQPage } from '../FAQ/FAQ';
 import { MapPage } from '../map/map';
 import { SchedulePage } from '../schedule/schedule';
@@ -29,6 +30,10 @@ export class NavigationPage {
 
   navPage4(){
 
+  }
+
+  navDiningPage(){
+    this.navCtrl.push(DiningPage);
   }
 
   navAboutSchool(){
